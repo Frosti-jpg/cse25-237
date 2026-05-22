@@ -4,22 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Finder</title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
   <header>
-    <h1>Project Finder</h1>
-    <nav>
-      <a href="cart.html">Cart</a>
-      <a href="login.html">Profile</a>
-    </nav>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="prebuilts.html">PreBuilt PCs</a>
-      <a href="about.html">About</a>
-      <a href="support.html">Support</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+    <div class="top-header">
+      <div class="left">
+        <a href="index.html">
+          <h1>Project-Finder</h1>
+        </a>
+      </div>
+
+      <div class="searchbar">
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <div class="right">
+        <nav>
+          <a href="cart.html">
+            <img src="Images/Header Icons/Cart.png" alt="Cart" width="24" height="auto">
+          </a>
+          <a href="login.html">
+            <img src="Images/Header Icons/Profile.png" alt="Profile" width="24" height="auto">
+          </a>
+        </nav>
+      </div>
+    </div>
+    
+    <!--Bottom portion of the header-->
+    <div class="bottom-header">
+      <div class="left"></div> <!--Dividing the space into 3 sections-->
+
+      <div class="center">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="prebuilts.html">PreBuilt PCs</a>
+        </nav>
+      </div>
+
+      <div class="right">
+        <nav>
+          <a href="about.html">About</a>
+          <a href="support.html">Support</a>
+          <a href="feedback.html">Feedback</a>
+        </nav>
+      </div>
+    </div>
+
   </header>
 
   <main>

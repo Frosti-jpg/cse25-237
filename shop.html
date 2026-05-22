@@ -4,77 +4,195 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop - Project Finder</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
  <header>
-    <h1>Project Finder</h1>
-    <nav>
-      <a href="cart.html">Cart</a>
-      <a href="login.html">Profile</a>
-    </nav>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="prebuilts.html">PreBuilt PCs</a>
-      <a href="about.html">About</a>
-      <a href="support.html">Support</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+    <div class="top-header">
+      <div class="left">
+        <a href="index.html">
+          <h1>Project-Finder</h1>
+        </a>
+      </div>
+
+      <div class="searchbar">
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <div class="right">
+        <nav>
+          <a href="cart.html">
+            <img src="Images/Header Icons/Cart.png" alt="Cart" width="24" height="auto">
+          </a>
+          <a href="login.html">
+            <img src="Images/Header Icons/Profile.png" alt="Profile" width="24" height="auto">
+          </a>
+        </nav>
+      </div>
+    </div>
+    
+    <!--Bottom portion of the header-->
+    <div class="bottom-header">
+      <div class="left"></div> <!--Dividing the space into 3 sections-->
+
+      <div class="center">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="shop.html"  class="active">Shop</a>
+          <a href="prebuilts.html">PreBuilt PCs</a>
+        </nav>
+      </div>
+
+      <div class="right">
+        <nav>
+          <a href="about.html">About</a>
+          <a href="support.html">Support</a>
+          <a href="feedback.html">Feedback</a>
+        </nav>
+      </div>
+    </div>
+
   </header>
   <main>
-    <nav>
-      <h2>Categories</h2>
-      <button onclick="filterSelection('all')">All</button>
-      <button onclick="filterSelection('CPU')">CPU</button>
-      <button onclick="filterSelection('GPU')">GPU</button>
-      <button onclick="filterSelection('RAM')">RAM</button>
-      <button onclick="filterSelection('PSU')">Power Supply Unit</button>
-      <button onclick="filterSelection('Storage')">Storage</button>
-      <button onclick="filterSelection('CPUCoolers')">CPU Coolers</button>
-      <button onclick="filterSelection('Cases')">Cases</button>
-      <button onclick="filterSelection('Fans')">Case Fans</button>
-      <button onclick="filterSelection('Cables')">Cables</button>
-    </nav>
+    <section class="categories">
+        <h2>Categories</h2>
+        <nav>
+          <button onclick="filterSelection('all')">All</button>
+          <button onclick="filterSelection('CPU')">CPU</button>
+          <button onclick="filterSelection('GPU')">GPU</button>
+          <button onclick="filterSelection('RAM')">RAM</button>
+          <button onclick="filterSelection('PSU')">Power Supply Unit</button>
+          <button onclick="filterSelection('Storage')">Storage</button>
+          <button onclick="filterSelection('CPUCoolers')">CPU Coolers</button>
+          <button onclick="filterSelection('Cases')">Cases</button>
+          <button onclick="filterSelection('Fans')">Case Fans</button>
+          <button onclick="filterSelection('Cables')">Cables</button>
+        </nav>
+    </section>
 
-    <section>
+    <section class="product-grid">
 
-      <article>
+      <article class="product-card">
         <a href="product.html">
-          <img src="Images/Picure1.png" alt="Picture of Custom PreBuilt PC"> 
-          <h3>Product Name</h3>
-          <p>Condition</p>
-          <h4>Price</h4>
+          <img src="Images/Picture4.jpg" alt="Picture of Custom PreBuilt PC">
         </a>
-        <button type="button">Add To Cart</button>
+        <div class="product-info">
+          <a href="product.html">
+            <h3 class="product-title">Asus ProART RTX4070 12GB</h3>
+            <p class="product-condition">Used</p>
+          </a>
+          <div class="purchase-row">
+            <span class="product-price">BWP 35000</span>
+            <button type="button" class="tocart-button">Add To Cart</button>
+          </div>
+        </div>
+
       </article>
 
-      <article>
+      <article class="product-card">
         <a href="product.html">
-          <img src="Images/Picture2.png" alt="Picture of Custom PreBuilt PC"> 
-          <h3>Product Name</h3>
-          <p>Condition</p>
-          <h4>Price</h4>
+          <img src="Images/Picture4.jpg" alt="Picture of Custom PreBuilt PC">
         </a>
-        <button type="button">Add To Cart</button>
+        <div class="product-info">
+          <a href="product.html">
+            <h3 class="product-title">Asus ProART RTX4070 12GB</h3>
+            <p class="product-condition">Used</p>
+          </a>
+          <div class="purchase-row">
+            <span class="product-price">BWP 35000</span>
+            <button type="button" class="tocart-button">Add To Cart</button>
+          </div>
+        </div>
+
       </article>
 
-      <article>
+      <article class="product-card">
         <a href="product.html">
-          <img src="Images/Picture3.png" alt="Picture of Custom PreBuilt PC"> 
-          <h3>Product Name</h3>
-          <p>Condition</p>
-          <h4>Price</h4>
+          <img src="Images/Picture4.jpg" alt="Picture of Custom PreBuilt PC">
         </a>
-        <button type="button">Add To Cart</button>
+        <div class="product-info">
+          <a href="product.html">
+            <h3 class="product-title">Asus ProART RTX4070 12GB</h3>
+            <p class="product-condition">Used</p>
+          </a>
+          <div class="purchase-row">
+            <span class="product-price">BWP 35000</span>
+            <button type="button" class="tocart-button">Add To Cart</button>
+          </div>
+        </div>
+
       </article>
 
-      <div>
-        <button type = "button">Left Arrow</button>
-        <p>Page 1 of 2</p>
-        <button type = "button">Right Arrow</button>
-      </div>
-      
+      <article class="product-card">
+        <a href="product.html">
+          <img src="Images/Picture4.jpg" alt="Picture of Custom PreBuilt PC">
+        </a>
+        <div class="product-info">
+          <a href="product.html">
+            <h3 class="product-title">Asus ProART RTX4070 12GB</h3>
+            <p class="product-condition">Used</p>
+          </a>
+          <div class="purchase-row">
+            <span class="product-price">BWP 35000</span>
+            <button type="button" class="tocart-button">Add To Cart</button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="product-card">
+        <a href="product.html">
+          <img src="Images/Picture4.jpg" alt="Picture of Custom PreBuilt PC">
+        </a>
+        <div class="product-info">
+          <a href="product.html">
+            <h3 class="product-title">Asus ProART RTX4070 12GB</h3>
+            <p class="product-condition">Used</p>
+          </a>
+          <div class="purchase-row">
+            <span class="product-price">BWP 35000</span>
+            <button type="button" class="tocart-button">Add To Cart</button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="product-card">
+        <a href="product.html">
+          <img src="Images/Picture4.jpg" alt="Picture of Custom PreBuilt PC">
+        </a>
+        <div class="product-info">
+          <a href="product.html">
+            <h3 class="product-title">Asus ProART RTX4070 12GB</h3>
+            <p class="product-condition">Used</p>
+          </a>
+          <div class="purchase-row">
+            <span class="product-price">BWP 35000</span>
+            <button type="button" class="tocart-button">Add To Cart</button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="product-card">
+        <a href="product.html">
+          <img src="Images/Picture4.jpg" alt="Picture of Custom PreBuilt PC">
+        </a>
+        <div class="product-info">
+          <a href="product.html">
+            <h3 class="product-title">Asus ProART RTX4070 12GB</h3>
+            <p class="product-condition">Used</p>
+          </a>
+          <div class="purchase-row">
+            <span class="product-price">BWP 35000</span>
+            <button type="button" class="tocart-button">Add To Cart</button>
+          </div>
+        </div>
+
+      </article>
+
     </section>
   </main>
   <footer>

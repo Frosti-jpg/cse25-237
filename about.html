@@ -4,32 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Project Finder</title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
   <header>
-    <h1>Project Finder</h1>
-    <nav>
-      <a href="cart.html">Cart</a>
-      <a href="login.html">Profile</a>
-    </nav>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="prebuilts.html">PreBuilt PCs</a>
-      <a href="about.html">About</a>
-      <a href="support.html">Support</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+    <div class="top-header">
+      <div class="left">
+        <a href="index.html">
+          <h1>Project-Finder</h1>
+        </a>
+      </div>
+
+      <div class="searchbar">
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <div class="right">
+        <nav>
+          <a href="cart.html">
+            <img src="Images/Header Icons/Cart.png" alt="Cart" width="24" height="auto">
+          </a>
+          <a href="login.html">
+            <img src="Images/Header Icons/Profile.png" alt="Profile" width="24" height="auto">
+          </a>
+        </nav>
+      </div>
+    </div>
+    
+    <!--Bottom portion of the header-->
+    <div class="bottom-header">
+      <div class="left"></div> <!--Dividing the space into 3 sections-->
+
+      <div class="center">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="prebuilts.html">PreBuilt PCs</a>
+        </nav>
+      </div>
+
+      <div class="right">
+        <nav>
+          <a href="about.html"  class="active">About</a>
+          <a href="support.html">Support</a>
+          <a href="feedback.html">Feedback</a>
+        </nav>
+      </div>
+    </div>
+
   </header>
   <main>
-    <h2>About Us</h2>
-    <p>Project Finder was a project created by a PC enthusiast by the name or Robin. In his frustration of there being only a select few trustworthy Computer and Computer Vendors, Project Finder was born. Its aim being to be a store trusted by the community that aims to provide Computers and Computer components at competetive prices, while also ensuring that from the moment a customer presses order to when the product arrives at their doorstep is hasstle free. We aim to provide nothing under exeptional service to all out customers. </p>
-    <img src = "Images/Banner.png" alt = "Banner with floating icons of computer components">
-    <p>If you have any quieries or need help, visit support by pressing the support link below.</p>
-    <a href="support.html">Support Page</a>
-    <p>If you would like to leave any feedback about any of our services or you experience, please visit out feedback page using the link below!</p>
-    <a href="feedback.html">Leave Feedback</a>
+    <div class="about-us">
+      <h2>About Us</h2><br>
+      <p>Built by enthusiasts, for enthusiasts.</p><br>
+      <p><span style="color: #EB9234; font-weight: 600;">Project-Finder</span> was created from a simple idea: getting quality PC hardware and reliable prebuilt computers shouldn't be difficult.</p><br>
+      <p>Before our store began, finding trusted PC components, gaming hardware, and professionally built systems locally wasn't always easy. Limited options, inconsistent availability, and a lack of dedicated PC-focused businesses inspired Robin to create something different - a place where builders, gamers, students, creators, and everyday users could find the tech they need under one roof.</p><br>
+      <p>Whether you're assembling your dream gaming rig from scratch, upgrading an older system, or looking for a powerful ready-to-go prebuilt PC, we've got you covered.</p><br>
+      <p>We stock a growing selection of PC parts, gaming accessories, components, and custom/prebuilt systems, chosen with performance, reliability, and value in mind. But beyond the hardware, we're building a community around a shared passion for PCs and technology.</p><br>
+      <p>We know the excitement of choosing parts, cable-managing a fresh build, hearing that first successful boot-up - and we know not everyone wants to start from scratch. That's why we offer carefully assembled prebuilt systems designed to deliver solid performance right out of the box.</p><br>
+      <h2>Why Shop With Us?</h2><br>
+      <p>
+        🖥️ Built by PC Enthusiasts - We understand the hobby because we live it. <br>
+        ⚡ Parts & Prebuilt PCs - Build your own, customize, or plug in and play. <br>
+        🤝 Local, Passion-Driven Service - Real support from people who genuinely care about tech. <br>
+        💸 Performance & Value Focused - Hardware chosen with your budget and goals in mind. <br>
+      </p><br>
+      <p>At, <span style="color: #EB9234; font-weight: 600;">Project-Finder</span> we're more than a PC store - we're here to help grow a stronger local PC scene, one build at a time.</p><br>
+      <p>Build it. Upgrade it. Game on.</p><br>
+    </div>
   </main>
   <footer>
     <p>&copy;Robin</p>
