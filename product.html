@@ -4,254 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop - Project Finder</title>
-  <link rel="stylesheet" href="">
-
-  <style>
-    
-  *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  }
-
-  header {
-      background-color: #1c1c1c;
-  }
-
-  body {
-      /*font-family: Arial, Helvetica, sans-serif;*/
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-weight: 400;
-      color: #1c1c1c;
-      background-color: #f2f2f2;
-      margin: 0%;
-      padding: 0%;
-      line-height: 1.8;
-  }
-
-  footer {
-      background-color: #1c1c1c;
-      display: flex;
-      justify-content: center;
-
-      margin-top: 46px;
-  }
-
-  footer p {
-      color: #f2f2f2;
-      padding-bottom: 10px;
-      padding-top: 10px;
-  }
-
-  /* HEADER AREA */
-
-  /* Top Header Part */
-  .top-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      background-color: #1c1c1c;
-      color: #f2f2f2;
-
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 27px;
-      padding-right: 27px;
-  }
-
-  .top-header .left, .top-header .center, .top-header .right {
-      flex: 1;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .top-header .left h1 {
-      display: flex;
-      width: 265px;
-      height: auto;
-      
-  }
-
-  .top-header .right nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-  }
-
-  .top-header .right {
-      flex: 1;
-      display: flex;
-      justify-content:flex-end ;
-
-  }
-
-  .top-header .left a {
-      text-decoration: none;
-      color: #f2f2f2;
-
-  }
-
-  .searchbar input {
-      border-radius: 20px;
-      background-color: #585858;
-      color: #f2f2f2;
-      width: 400px;
-      border: none;
-      padding: 8px 16px;
-  }
-
-  .searchbar input::placeholder {
-      color: #f2f2f2;
-      text-align: center;
-  }
-
-  /* Bottom header part */
-  .bottom-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      background-color: #f2f2f2;
-      color: #1c1c1c;
-      border-bottom: #1c1c1c;
-      border-style: solid;
-      border-left: 0px; 
-      border-right: 0px; 
-      border-top: 0px;
-      padding-left: 27px; 
-      padding-right: 27px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-  }
-
-
-  .bottom-header .left, .bottom-header .center, .bottom-header .right {
-      flex: 1;
-  }
-
-
-  .bottom-header .center nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-  }
-
-
-  .bottom-header .right {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-  }
-
-  .bottom-header .right nav {
-      display: flex;
-      gap: 20px;
-  }
-
-
-  /* Bottom header nav link behaviors */
-  .bottom-header .right nav a, .bottom-header .center nav a {
-      text-decoration: none;
-      font-weight:500;
-      color: #1c1c1c;
-  }
-
-  .bottom-header .right nav a:active, .bottom-header .center nav a:active {
-      color: #EB9234;
-      text-decoration: none;
-  }
-
-
-  .bottom-header .right nav a:hover, .bottom-header .center nav a:hover {
-      color: #EB9234;
-      text-decoration: underline
-  }
-
-  .bottom-header .right nav a:visited, .bottom-header .center nav a:visited {
-      text-decoration: none;
-  }
-
-#product-title {
-  font-size: 22px; font-weight: 500;
-  text-align: center; margin-bottom: 24px;
-}
-
-.product-gallery {
-  display: grid;
-  grid-template-columns: 580px 1fr;
-  gap: 6px;
-  margin-bottom: 24px;
-}
-
-#main-picture {
-  height: 400px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-#main-picture img { width: 100%; height: 100%; object-fit: cover; }
-
-#pictures {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
-}
-#pictures img {
-  width: 100%; height: 197px;
-  object-fit: cover; border-radius: 8px; cursor: pointer;
-}
-
-.purchase-row {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 16px 0;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
-  margin-bottom: 24px;
-}
-
-#product-condition {
-  background-color: aquamarine;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase; 
-  letter-spacing: 1px; color: #888;
-  margin-bottom: 4px;
-}
-#product-price {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.purchase-row button {
-  border-radius: 8px;
-  padding-left: 6px;
-  padding-right: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.product-info {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 32px;
-}
-
-.product-specifications .spec-item {
-  padding: 10px 0;
-  border-bottom: 1px solid #f2f2f2;
-  font-size: 14px;
-}
-
-.product-details {
-  font-size: 14px;
-  line-height: 26px; 
-  color: #1c1c1c;
-  display: flex; 
-  flex-direction: 
-  column; gap: 12px;
-}
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -302,9 +55,9 @@
 
   </header>
 
-  <main>
-
-    <h2 id="product-title">Emira L3 Lite</h2>
+  <main class="product-page">
+    
+    <h2 id="product-title">Asus ProArt RTX4070 12GB</h2>
 
     <div class="product-gallery">
       <div id="main-picture">
@@ -320,16 +73,31 @@
     <section class="purchase-row">
       <div class="product-price-container">
         <p id="product-condition">New</p>
-        <p id="product-price">BWP</p>
+        <p id="product-price">BWP 55000</p>
       </div>
-      <button type="button">Add To Cart</button>
+      <button type="button" class="tocart-button">Add To Cart</button>
     </section>
     <section class="product-info">
       <article class="product-specifications">
-
+        <h3>Specifications</h3>
+        <p class="slot1">GPU: ASUS ProArt GeForce RTX 4070</p>
+        <p class="slot2">VRAM: 12GB GDDR6X</p>
+        <p class="slot3">Architecture: NVIDIA Ada Lovelace</p>
+        <p class="slot4">Memory Bus: 192-bit</p>
+        <p class="slot5">Boost Clock: Up to 2535 MHz</p>
+        <p class="slot6">Cooling: Triple Axial-Tech Fan Design</p>
+        <p class="slot7">Ray Tracing: 3rd Gen RT Cores</p>
+        <p class="slot8">AI Features: DLSS 3 & Tensor Cores</p>
+        <p class="slot9">Display Outputs: HDMI 2.1a + DisplayPort 1.4a</p>
       </article>
-      <article class="product-details">
-
+      <article class="product-description">
+        <p>
+          Designed for creators, professionals, and compact high-performance builds, the ASUS ProArt GeForce RTX 4070 delivers next-generation graphics power in a refined, minimalist form factor.<br><br>
+          Powered by NVIDIA's Ada Lovelace architecture, this graphics card combines exceptional gaming performance with serious creative acceleration for workloads such as 3D rendering, video editing, motion graphics, AI-assisted applications, and game development.<br><br>
+          The ProArt series emphasizes clean aesthetics, compact sizing, and efficient cooling, making it an ideal choice for workstations, creator PCs, and space-conscious builds without compromising performance.<br><br>
+          Equipped with 12GB of ultra-fast GDDR6X memory, advanced ray tracing capabilities, and support for DLSS 3 AI frame generation, the ProArt RTX 4070 delivers smooth high-refresh gaming, accelerated content creation workflows, and powerful multitasking capability.<br><br>
+          Whether you're building a sleek workstation, editing 4K content, streaming, designing, or gaming at high settings, the ASUS ProArt RTX 4070 is engineered to balance performance, reliability, and professional styling.
+        </p>
       </article>
     </section>
 
