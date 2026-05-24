@@ -399,7 +399,8 @@ main #featured-section h2 {
     border-radius: 8px;
     padding-left: 6px;
     padding-right: 6px;
-
+    background-color: rgba(0,0,0,0);
+    
     cursor: pointer;
     transition: 0.3s;
 }
@@ -538,7 +539,10 @@ main #featured-section h2 {
     padding-right: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: rgba(0,0,0,0);
+    
     width: 180px;
+    
     cursor: pointer;
     transition: 0.3s;
 }
