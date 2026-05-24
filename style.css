@@ -614,7 +614,7 @@ main #featured-section h2 {
 
 .cart-sidebar .cart-header {
   padding: 20px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid #1c1c1c;
   display: flex;
   justify-content: space-between;
   align-items: center;
