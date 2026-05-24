@@ -163,6 +163,10 @@ footer p {
     text-decoration: none;
 }
 
+.bottom-header .center nav a.active, .bottom-header .right nav a.active {
+    color: #EB9234;
+}
+
 #featured-section{
   margin-top: 0px;
 }
@@ -280,6 +284,24 @@ main #featured-section h2 {
     gap: 50px;
 }
 
+.home .bottom-nav .button {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.home .bottom-nav .button .button-label {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.home .bottom-nav .button .button-icon {
+    width: 96px;
+    height: auto;
+}
+
 .home .button {
 
     background-color: #EB9234;
@@ -331,9 +353,9 @@ main #featured-section h2 {
 .product-card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     max-width: 270px;
+    height: 447px;
 }
 
 .product-card img {
@@ -345,13 +367,15 @@ main #featured-section h2 {
 
 .product-card .product-info .product-title {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     color: #1c1c1c;
     line-height: normal;
-    margin-top: 10px;
+    margin-top: 0px;
 
     padding-left: 4px;
     padding-right: 4px;
+
+
 }
 
 .product-card .product-info a {
@@ -366,12 +390,23 @@ main #featured-section h2 {
     padding-right: 4px;
 }
 
+
+
+.product-grid .product-card .product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    justify-content: space-between;
+}
+
+
 .product-card .product-info .purchase-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    margin-top: 10px;
+    margin-top: auto;
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -579,3 +614,4 @@ main #featured-section h2 {
 
   padding: 10px 10px 10px 10px;
 }
+

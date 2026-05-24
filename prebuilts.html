@@ -60,59 +60,76 @@
       <h2>Categories</h2>
       <nav>
         <button onclick="filterSelection('all')">All</button>
-        <button onclick="filterSelection('<5000')">Under P5000</button>
+        <button onclick="filterSelection('lessthan5000')">Under P5000</button>
         <button onclick="filterSelection('5000to15000')">P5000 - P15000</button>
-        <button onclick="filterSelection('>15000')">Over P15000</button>
+        <button onclick="filterSelection('morethan15000')">Over P15000</button>
       </nav>
     </section>
 
     <section class="product-grid">
 
-      <article class="product-card">
+      <article class="product-card" data-category="5000to15000">
         <a href="product.html">
-          <img src="Images/Picture1.png" alt="Picture of an RTX3070 Ti PC">
+          <img src="Images/Picture1.png" alt="Picture of an RTX3070 Ti PreBuilt PC">
         </a>
         <div class="product-info">
           <a href="product.html">
-            <h3 class="product-title">Asus TUF Gaming GeForce RTX5070 Ti 16GB</h3>
-            <p class="product-condition">Used</p>
+            <h3 class="product-title">Monochrome V3</h3>
+            <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
-            <span class="product-price">BWP 35000</span>
+            <span class="product-price">BWP 14999</span>
             <button type="button" class="tocart-button">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
-      <article class="product-card">
+      <article class="product-card" data-category="lessthan5000">
         <a href="product.html">
-          <img src="Images/Picture2.png" alt="Picture of 5080 16GB">
+          <img src="Images/AllProducts/PreBuillts/1660SuperBuild.jpg" alt="Picture of an GTX 1660 Super PreBuilt PC">
         </a>
         <div class="product-info">
           <a href="product.html">
-            <h3 class="product-title">Asus TUF Gaming GeForce RTX5070 Ti 16GB</h3>
-            <p class="product-condition">Used</p>
+            <h3 class="product-title">Stormtrooper Lite</h3>
+            <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
-            <span class="product-price">BWP 35000</span>
+            <span class="product-price">BWP 4999</span>
             <button type="button" class="tocart-button">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
-      <article class="product-card">
+      <article class="product-card" data-category="5000to15000">
         <a href="product.html">
-          <img src="Images/Picture3.png" alt="Picture of 5070 Ti 16GB">
+          <img src="Images/AllProducts/PreBuillts/3060TiBuild.jpg" alt="Picture of an RTX 3060 Ti PreBuilt PC">
         </a>
         <div class="product-info">
           <a href="product.html">
-            <h3 class="product-title">Asus TUF Gaming GeForce RTX5070 Ti 16GB</h3>
-            <p class="product-condition">Used</p>
+            <h3 class="product-title">Monochrome Lite 3</h3>
+            <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
-            <span class="product-price">BWP 35000</span>
+            <span class="product-price">BWP 12999</span>
+            <button type="button" class="tocart-button">Add To Cart</button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="product-card" data-category="morethan15000">
+        <a href="product.html">
+          <img src="Images/AllProducts/PreBuillts/5080Build.jpg" alt="Picture of an RTX 5080 PC">
+        </a>
+        <div class="product-info">
+          <a href="product.html">
+            <h3 class="product-title">Shadow V3</h3>
+            <p class="product-condition" style="color: #42f56f;">New</p>
+          </a>
+          <div class="purchase-row">
+            <span class="product-price">BWP 35999</span>
             <button type="button" class="tocart-button">Add To Cart</button>
           </div>
         </div>
@@ -124,5 +141,6 @@
   <footer>
     <p>&copy;Robin</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
