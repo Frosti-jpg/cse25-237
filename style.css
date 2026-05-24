@@ -179,10 +179,6 @@ footer p {
     color: #EB9234;
 }
 
-#featured-section{
-  margin-top: 0px;
-}
-
 main #featured-section h2 {
     text-align: center;
     font-size: 36px;
@@ -192,7 +188,7 @@ main #featured-section h2 {
     margin-bottom: 24px;
 }
 
-#carousel-spotlight{
+#featured-spotlight{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -200,29 +196,31 @@ main #featured-section h2 {
     margin-top: 0px;
 }
 
-#carousel-spotlight img{
+#featured-spotlight img{
     border-radius: 12px;
+    width: 458px;
+    height: 458px;
 }
 
-#carousel-spotlight .product-info{
+#featured-spotlight .product-info{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 420px;
 }
 
-#carousel-spotlight .product-info .product-details{
+#featured-spotlight .product-info .product-details{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#carousel-spotlight .product-info .product-details a{
+#featured-spotlight .product-info .product-details a{
     text-decoration: none;
     color: black;
 }
 
-#carousel-spotlight .product-info .product-details h3{
+#featured-spotlight .product-info .product-details h3{
     font-size: 42px;
     width: 500px;
     font-weight: lighter;
@@ -230,17 +228,17 @@ main #featured-section h2 {
 }
 
 
-#carousel-spotlight .product-info .price-and-cart h4, #carousel-spotlight .product-info .price-and-cart .addtocart-button {
+#featured-spotlight .product-info .price-and-cart h4, #featured-spotlight .product-info .price-and-cart .addtocart-button {
     flex: 1;
 }
 
-#carousel-spotlight .product-info .price-and-cart {
+#featured-spotlight .product-info .price-and-cart {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-#carousel-spotlight .product-info .price-and-cart .addtocart-button {
+#featured-spotlight .product-info .price-and-cart .addtocart-button {
     width: 185px;
     height: 55px;
 
@@ -253,38 +251,6 @@ main #featured-section h2 {
 
     cursor: pointer;
     transition: 0.3s;
-}
-
-#carousel-container .carousel-controls{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-#carousel-container .carousel-controls .arrow-button{
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: none;
-    background-color: white;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-#carousel-container .carousel-controls .carousel-dots{
-    display: flex;
-    gap: 12px;
-}
-
-.carousel-dots .dot-button{
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: none;
-    background-color: lightgray;
-    cursor: pointer;
 }
 
 .home .bottom-nav {
@@ -325,7 +291,7 @@ main #featured-section h2 {
     align-items: center;
     gap: 20px;
     text-decoration: none;
-    color: white;
+    color: #f2f2f2;
     font-size: 24px;
     font-weight: bold;
 }
@@ -586,8 +552,8 @@ main #featured-section h2 {
 }
 
 .product-page .purchase-row .product-price-container #product-price{
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .product-page .product-info {
@@ -608,7 +574,7 @@ main #featured-section h2 {
 }
 
 .slot1, .slot3, .slot5, .slot7, .slot9 {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
 }
 
 .product-specifications .slot9 {
@@ -617,7 +583,7 @@ main #featured-section h2 {
 }
 
 .product-info .product-description {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
 
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -627,17 +593,13 @@ main #featured-section h2 {
   padding: 10px 10px 10px 10px;
 }
 
-
-
-
-/* --- 11. CART SIDEBAR --------------------- */
 .cart-sidebar {
   position: fixed;
   top: 0;
-  right: -400px;   /* hidden off-screen by default */
+  right: -400px;   /* hides cart off-screen by default */
   width: 360px;
   height: 100%;
-  background: #FFFFFF;
+  background: #f2f2f2;
   box-shadow: -4px 0 20px rgba(0,0,0,0.15);
   z-index: 200;
   transition: right 0.3s ease;
@@ -664,7 +626,7 @@ main #featured-section h2 {
   border: none;
   font-size: 1.4rem;
   cursor: pointer;
-  color: #666;
+  color: #1c1c1c;
 }
 
 .cart-sidebar .cart-items {
@@ -677,7 +639,7 @@ main #featured-section h2 {
   display: flex;
   gap: 12px;
   padding: 12px 0;
-  border-bottom: 1px solid #F0F0F0;
+  border-bottom: 1px solid #1c1c1c;
 }
 
 .cart-item img {
@@ -698,7 +660,7 @@ main #featured-section h2 {
 }
 
 .cart-item-info .price {
-  color: var(--orange);
+  color: #EB9234;
   font-weight: 700;
 }
 
@@ -706,14 +668,14 @@ main #featured-section h2 {
   background: none;
   border: none;
   cursor: pointer;
-  color: #999;
+  color: #1c1c1c;
   font-size: 1rem;
   padding: 0;
 }
 
 .cart-footer {
   padding: 20px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid #1c1c1c;
 }
 
 .cart-total {
@@ -740,11 +702,11 @@ main #featured-section h2 {
 /* Empty cart message */
 .empty-cart {
   text-align: center;
-  color: var(--text-muted);
+  color: #1c1c1c;
   padding: 40px 0;
 }
 
-/* --- 5. SHARED BUTTON STYLES -------------- */
+/* Cart Checkout Button */
 .btn-orange {
   background-color: #EB9234;
   color: #FFFFFF;
@@ -766,9 +728,7 @@ main #featured-section h2 {
 }
 
 
-/* ============================================================
-   RESPONSIVE — ALL PAGES
-   ============================================================ */
+/* RESPONSIVE PART — ALL PAGES */
 
 @media (max-width: 1024px) {
 

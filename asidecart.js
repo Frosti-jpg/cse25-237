@@ -1,6 +1,4 @@
-/* ============================================================
-   CART
-   ============================================================ */
+/* CART */
 
 function getCart() {
   return JSON.parse(localStorage.getItem('pf-cart') || '[]');
@@ -82,9 +80,7 @@ function renderCartItems() {
   totalEl.textContent = `BWP ${total.toLocaleString()}`;
 }
 
-/* ============================================================
-   ON PAGE LOAD
-   ============================================================ */
+/* ON PAGE LOAD */
 
 document.addEventListener('DOMContentLoaded', () => {
   updateCartBadge();
