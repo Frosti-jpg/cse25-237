@@ -23,12 +23,11 @@
 
       <div class="right">
         <nav>
-          <a href="cart.html">
+          <button class="cart-icon" id="cart-icon">
             <img src="Images/Header Icons/Cart.png" alt="Cart" width="24" height="auto">
-          </a>
-          <a href="login.html">
-            <img src="Images/Header Icons/Profile.png" alt="Profile" width="24" height="auto">
-          </a>
+            <span class="badge" id="cart-badge" style="display:none;">0</span>
+          </button>
+          <img src="Images/Header Icons/Profile.png" alt="Profile">
         </nav>
       </div>
     </div>
@@ -106,23 +105,19 @@
     <div class="bottom-nav">
 
       <a href="shop.html" class="button">
-        <img src="Images/Navigation Icons/GPU Icon.png" alt="GPU Button Icon" class="button-icon">
         <span class="button-label">Shop PC Parts</span>
       </a>
 
       <a href="prebuilts.html" class="button">
-        <img src="Images/Navigation Icons/PreBuiltIcon.png" alt="PreBuilt PC Button Icon" class="button-icon">
-        <span>Shop PreBuilt PCs</span>
+        <span class="button-label">Shop PreBuilt PCs</span>
       </a>
 
       <a href="support.html" class="button">
-        <img src="Images/Navigation Icons/Support.png" alt="GPU Button Icon" class="button-icon">
-        <span>Reach out to Support</span>
+        <span class="button-label">Reach out to Support</span>
       </a>
 
       <a href="about.html" class="button">
-        <img src="Images/Navigation Icons/MoreInfo.png" alt="GPU Button Icon" class="button-icon">
-        <span>About our company</span>
+        <span class="button-label">About our company</span>
       </a>
 
     </div>
@@ -133,5 +128,28 @@
     <p>&copy;Robin</p>
   </footer>
   
+  <!-- ===================== CART SIDEBAR =================== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      Shopping Cart
+      <button class="close-btn" id="close-cart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total">BWP 0</span>
+      </div>
+      <button class="btn-orange" style="width:100%;">Checkout</button>
+    </div>
+  </aside>
+
+  <script src="asidecart.js"></script>
 </body>
 </html>

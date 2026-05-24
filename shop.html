@@ -23,12 +23,11 @@
 
       <div class="right">
         <nav>
-          <a href="cart.html">
+          <button class="cart-icon" id="cart-icon">
             <img src="Images/Header Icons/Cart.png" alt="Cart" width="24" height="auto">
-          </a>
-          <a href="login.html">
-            <img src="Images/Header Icons/Profile.png" alt="Profile" width="24" height="auto">
-          </a>
+            <span class="badge" id="cart-badge" style="display:none;">0</span>
+          </button>
+          <img src="Images/Header Icons/Profile.png" alt="Profile">
         </nav>
       </div>
     </div>
@@ -75,153 +74,153 @@
     <section class="product-grid">
 
       <article class="product-card" data-category="gpu">
-        <a href="product.html">
+        <a href="product.html?id=rtx4070">
           <img src="Images/Picture4.jpg" alt="Picture of the Asus ProArt GeForce RTX 4070 12GB">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?id=rtx4070">
             <h3 class="product-title">Asus ProArt GeForce RTX 4070 12GB</h3>
             <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 55000</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
       <article class="product-card" data-category="ram">
-        <a href="product.html">
+        <a href="product.html?id=ripjawsram">
           <img src="Images/AllProducts/Shop/RipJaws S5 48GB/MainGSkill.jpg" alt="Picture of the G.Skill RipJaws S5 DDR5 48GB 6000MT/s (2x24GB) DIMM RAM Kit">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?id=ripjawsram">
             <h3 class="product-title">G.Skill RipJaws S5 48GB DDR5 6000MT/s (2x48GB)</h3>
             <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 8999</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
       <article class="product-card" data-category="storage">
-        <a href="product.html">
+        <a href="product.html?id=s990evo2tb">
           <img src="Images/AllProducts/Shop/990 Evo 2TB/Main990.jpg" alt="Picture of the Samsung 990 Evo 2TB SSD">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?id=s990evo2tb">
             <h3 class="product-title">Samsung 990 Evo 2TB</h3>
             <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 6000</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
       <article class="product-card" data-category="gpu">
-        <a href="product.html">
+        <a href="product.html?id=evga3080">
           <img src="Images/AllProducts/Shop/EVGA 3080/MainEVGA3080Box.png" alt="Picture of the EVGA GeForce RTX3080 FTW3 Ultra 10GB">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?id=evga3080">
             <h3 class="product-title">EVGA GeForce RTX3080 FTW3 Ultra 10GB</h3>
             <p class="product-condition">Used</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 9999</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
       <article class="product-card" data-category="cpucooler">
-        <a href="product.html">
+        <a href="product.html?id=hpyer212">
           <img src="Images/AllProducts/Shop/Hyper212 Air Cooler/MainCooler.jpg" alt="Picture of the Cooler Master Hyper 212 Black CPU Air Cooler">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?id=hpyer212">
             <h3 class="product-title">Cooler Master Hyper 212 Black CPU Air Cooler</h3>
             <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 3000</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
       <article class="product-card" data-category="case">
-        <a href="product.html">
+        <a href="product.html?id=northxl">
           <img src="Images/AllProducts/Shop/Fractal Design North XL/NorthMain.jpg" alt="Picture of the Fractal North XL in Charcoal Black with Dark Tempered Glass">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?id=northxl">
             <h3 class="product-title">Fractal Design North XL Charcoal Black TG Dark</h3>
             <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 3199</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
       <article class="product-card" data-category="cpu">
-        <a href="product.html">
+        <a href="product.html?id=i513600k">
           <img src="Images/AllProducts/Shop/i5-13600K/i5Main.jpg" alt="Picture of the Intel i5-13600K">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?id=i513600k">
             <h3 class="product-title">Intel i5-13600K</h3>
             <p class="product-condition" style="color: #42f56f;">New</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 3500</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
       <article class="product-card" data-category="gpu">
-        <a href="product.html">
+        <a href="product.html?id=zgrtx5080">
           <img src="Images/Picture2.png" alt="Picture of a Zotac Gaming GeForce RTX5080 16GB">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?id=zgrtx5080">
             <h3 class="product-title">Asus TUF Gaming GeForce RTX5080 16GB</h3>
             <p class="product-condition">Used</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 35000</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
       </article>
 
       <article class="product-card" data-category="gpu">
-        <a href="product.html">
+        <a href="product.html?tufgamingrtx5070">
           <img src="Images/Picture3.png" alt="Picture of an Asus TUF Gaming GeForce RTX5070 Ti 16GB">
         </a>
         <div class="product-info">
-          <a href="product.html">
+          <a href="product.html?tufgamingrtx5070">
             <h3 class="product-title">Asus TUF Gaming GeForce RTX5070 Ti 16GB</h3>
             <p class="product-condition">Used</p>
           </a>
           <div class="purchase-row">
             <span class="product-price">BWP 35000</span>
-            <button type="button" class="tocart-button">Add To Cart</button>
+            <button type="button" class="tocart-button" onclick="addToCart({name: 'Asus ProArt RTX 4070 12GB', price: 'BWP 55000', image: 'Images/Picture4.jpg'})">Add To Cart</button>
           </div>
         </div>
 
@@ -232,6 +231,29 @@
   <footer>
     <p>&copy;Robin</p>
   </footer>
+<div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      Shopping Cart
+      <button class="close-btn" id="close-cart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total">BWP 0</span>
+      </div>
+      <button class="btn-orange" style="width:100%;">Checkout</button>
+    </div>
+  </aside>
+
+  <script src="asidecart.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
